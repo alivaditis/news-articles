@@ -1,0 +1,13 @@
+.category-logo {
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: auto;
+}
+
+.category-heading {
+  font-size: 2.8em;
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bold;
+}

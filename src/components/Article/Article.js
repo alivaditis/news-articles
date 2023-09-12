@@ -3,6 +3,8 @@ import './Article.css'
 
 const Article = ({url, urlToImage, title, description, author, publishedAt, content, source}) => {
 
+  window.scrollTo(0, 0);
+
   return (
     <article>
       <img className='article-img' src={urlToImage}/>
