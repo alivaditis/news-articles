@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Landing setCurrentArticle={setCurrentArticle}/>}/>
         <Route path='/categories/:category' element={<Landing/>}/>
-        <Route path='/article' element={<Article currentArticle={currentArticle}/>}/>
+        <Route path='/article' element={<Article {...currentArticle}/>}/>
       </Routes>
     </div>
   );

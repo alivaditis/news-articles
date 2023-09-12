@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { useNavigate } from 'react-router'
 import { getArticles } from '../../api'
+import './Landing.css'
 import LandingCard from "./LandingCard/LandingCard"
 import LandingNav from './LandingNav/LandingNav'
 
@@ -11,7 +12,7 @@ const Landing = ({setCurrentArticle}) => {
 
   useEffect(() => {
     getArticles()
-      .then(res => setTopArticles(res.articles.slice(0, 5)))
+      .then(res => setTopArticles(res.articles))
       .catch(err => console.log(err))
   }, [])
   
@@ -24,9 +25,9 @@ const Landing = ({setCurrentArticle}) => {
   let topArticleCards = topArticles.map(article => <LandingCard key={article.url} handleArticleClick={handleArticleClick} {...article}/>)
 
   return (
-    <div>
+    <div className='landing'>
       <LandingNav/>
-      {topArticleCards}
+        {topArticleCards}
     </div>
   )
 }

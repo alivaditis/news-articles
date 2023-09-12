@@ -1,0 +1,25 @@
+article {
+  position: relative;
+}
+
+.article-img {
+  width: 100%;
+  height: auto;
+}
+
+.article-logo {
+  width: 30%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.article-info {
+  max-width: 800px;
+  margin: 1rem auto;
+}
+
+.article-src, .article-content {
+  margin-top: 1rem;
+}
