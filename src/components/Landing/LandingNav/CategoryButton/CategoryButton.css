@@ -1,0 +1,12 @@
+.category-button {
+  margin-right: .4rem;
+  background: none;
+  border: none;
+}
+
+.category-button:hover {
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+  cursor: pointer;
+}

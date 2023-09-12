@@ -1,0 +1,30 @@
+.logo {
+  width: 320px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.category-button-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and (min-width: 900px) {
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .category-button-container {
+    margin: 0;
+    width: auto;
+  }
+  .logo {
+    margin: 0;
+  }
+}
