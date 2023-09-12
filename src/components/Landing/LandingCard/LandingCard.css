@@ -12,11 +12,13 @@
 
 .landing-article-description {
   margin-top: 1rem;
+  color: #666666;
 }
 
 .auth-date-container {
   display: flex;
   margin-top: 1rem;
+  color: #666666;
 }
 
 .landing-author, .landing-bullet {
