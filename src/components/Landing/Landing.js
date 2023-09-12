@@ -25,7 +25,7 @@ const Landing = ({setCurrentArticle}) => {
 
   return (
     <div>
-      {/* <LandingNav/> */}
+      <LandingNav/>
       {topArticleCards}
     </div>
   )
