@@ -1,7 +1,7 @@
 const Article = () => {
   return (
     <div>
-      x
+      Yoooo
     </div>
   )
 }

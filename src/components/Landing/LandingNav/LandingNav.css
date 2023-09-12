@@ -1,0 +1,14 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 320px;
+  height: auto;
+}
+
+.category-button-container {
+  display:flex;
+}

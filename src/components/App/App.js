@@ -1,26 +1,19 @@
 import { useState, useEffect } from 'react';
 import { getArticles } from '../../api';
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom';
 import Landing from '../Landing/Landing'
 import './App.css';
 import Article from '../Article/Article';
 
 function App() {
-  const [topArticles, setTopArticles] = useState([])
-
-  useEffect(() => {
-    getArticles()
-      .then(res => setTopArticles(res.articles.slice(0, 5)))
-      .catch(err => console.log(err))
-  }, [])
+  const [currentArticle, setCurrentArticle] = useState(null)
 
   return (
     <div className="App">
-      {topArticles.length > 0 && topArticles.map(article => <p>{article.title}</p>)}
       <Routes>
-        <Route path='/' element={<Landing/>}/>
+        <Route path='/' element={<Landing setCurrentArticle={setCurrentArticle}/>}/>
         <Route path='/categories/:category' element={<Landing/>}/>
-        <Route path='/articles/:id' element={<Article/>}/>
+        <Route path='/article' element={<Article currentArticle={currentArticle}/>}/>
       </Routes>
     </div>
   );
