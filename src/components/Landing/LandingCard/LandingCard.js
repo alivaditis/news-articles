@@ -6,10 +6,10 @@ const LandingCard = ({url, urlToImage, title, description, author, publishedAt, 
         <img className='landing-article-img' src={urlToImage} alt={description}/>
         <div className='landing-article-info'>
           <h2>{title}</h2>
-          <p>{description}</p>
+          <p className='landing-article-description'>{description}</p>
           <div className='auth-date-container'>
-            <p>By {author}</p>
-            <p>-</p>
+            <p className='landing-author'>By {author}</p>
+            <p className='landing-bullet'>•</p>
             <p>{publishedAt.slice(0,10)}</p>
           </div>
         </div>
