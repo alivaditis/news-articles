@@ -12,7 +12,7 @@ const Article = ({url, urlToImage, title, description, author, publishedAt, cont
         <img className='article-logo' src='https://i0.wp.com/dailyplanetdc.com/wp-content/uploads/2021/11/2006-1.png?resize=735%2C196&ssl=1' alt='daily planet banner covering a globe'/>
       </Link>
       <div className='article-info'>
-        <h2>{title}</h2>
+        <h2>{title.split(' - ')[0]}</h2>
         <div className='auth-date-container'>
             <p className='landing-author'>By {author}</p>
             <p className='landing-bullet'>•</p>

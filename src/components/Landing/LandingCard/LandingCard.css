@@ -6,8 +6,9 @@
   border-bottom: 1px solid black;
 }
 
-.landing-card:hover {
-  cursor:pointer;
+.landing-article-img:hover, .landing-article-title:hover {
+  cursor: pointer;
+  color: rgb(15, 15, 172);
 }
 
 .landing-article-description {
@@ -19,6 +20,10 @@
   display: flex;
   margin-top: 1rem;
   color: #666666;
+}
+
+.landing-article-source {
+  color: #666666
 }
 
 .landing-author, .landing-bullet {

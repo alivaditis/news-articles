@@ -21,6 +21,10 @@ article {
   margin: 1rem auto;
 }
 
-.article-src, .article-content {
+.article-src {
+  color: #666666
+}
+
+.article-content {
   margin-top: 1rem;
 }
