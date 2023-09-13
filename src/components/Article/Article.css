@@ -19,6 +19,7 @@ article {
 .article-info {
   max-width: 800px;
   margin: 1rem auto;
+  padding: 1rem;
 }
 
 .article-src {
