@@ -5,7 +5,7 @@ import './Landing.css'
 import LandingCard from "./LandingCard/LandingCard"
 import LandingNav from './LandingNav/LandingNav'
 
-const Landing = ({setCurrentArticle}) => {
+const Landing = ({setCurrentArticle, handleApiError}) => {
   const [topArticles, setTopArticles] = useState([])
 
   const navigate = useNavigate()
@@ -13,7 +13,7 @@ const Landing = ({setCurrentArticle}) => {
   useEffect(() => {
     getArticles()
       .then(res => setTopArticles(res.articles))
-      .catch(err => console.log(err))
+      .catch(err => handleApiError(err))
   }, [])
   
   const handleArticleClick = (e) => {

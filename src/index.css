@@ -28,13 +28,17 @@ p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
 }
 
-p {
+p, button {
   font-family: 'Franklin';
   font-size: 1.1em;
 }
 
 h1, h2, h3 {
-  font-family: postoni;
+  font-family: 'Postoni';
+}
+
+h2 {
+  font-size: 24px;
 }
 
 #root, #__next {
