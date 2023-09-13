@@ -6,7 +6,7 @@ import './Category.css'
 import LandingCard from "../Landing/LandingCard/LandingCard"
 
 
-const Category = ({setCurrentArticle}) => {
+const Category = ({setCurrentArticle, handleApiError}) => {
   const [categoryArticles, setCategoryArticles] = useState([])
 
   const { category } = useParams()
@@ -14,8 +14,15 @@ const Category = ({setCurrentArticle}) => {
 
   useEffect(() => {
     getArticles(category)
-      .then(res => setCategoryArticles(res.articles))
-      .catch(err => console.log(err))
+      .then(res => {
+        if(res.articles.length) {
+          setCategoryArticles(res.articles)
+        } else {
+          navigate('/')
+        }
+      }
+        )
+      .catch(err => handleApiError(err))
   }, [])
   
   const handleArticleClick = (e) => {

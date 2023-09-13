@@ -1,0 +1,10 @@
+.bad-route {
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bad-route-heading {
+  text-align: center;
+  margin-top: 2rem;
+}

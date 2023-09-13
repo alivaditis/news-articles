@@ -5,7 +5,7 @@ import './LandingNav.css'
 const LandingNav = () => {
   return (
     <nav>
-      <Link>
+      <Link to ='/'>
         <h1>
           <img className='logo' src='https://i0.wp.com/dailyplanetdc.com/wp-content/uploads/2021/11/2006-1.png?resize=735%2C196&ssl=1' alt='daily planet banner covering a globe'/>
         </h1>
