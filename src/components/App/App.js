@@ -11,7 +11,7 @@ function App() {
   const [apiError, setApiError] = useState('')
 
   const handleApiError = (error) => {
-    setApiError(error)
+    setApiError(error.message)
   }
 
   if(apiError) {
@@ -23,8 +23,8 @@ function App() {
       <div className="App">
         <Routes>
           <Route path='/' element={<Landing setCurrentArticle={setCurrentArticle} handleApiError={handleApiError}/>}/>
-          <Route path='/categories/:category' element={<Category setCurrentArticle={setCurrentArticle}/>}/>
-          <Route path='/article' element={<Article {...currentArticle} currentArticle={currentArticle} handleApiError={handleApiError}/>}/>
+          <Route path='/categories/:category' element={<Category setCurrentArticle={setCurrentArticle} handleApiError={handleApiError}/>}/>
+          <Route path='/article' element={<Article {...currentArticle} currentArticle={currentArticle} />}/>
           <Route path='*' element={<BadRoute/>}/>
         </Routes>
       </div>
