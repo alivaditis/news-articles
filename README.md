@@ -9,7 +9,8 @@ An app that uses the newsAPI to get trending headlines and trending headlines by
 
 <img width="1419" alt="Screen Shot 2023-09-13 at 10 27 09 AM" src="https://github.com/alivaditis/news-articles/assets/123565022/4b213c6b-3734-4609-831e-e54a95be0149">
 <img width="1423" alt="Screen Shot 2023-09-13 at 10 27 21 AM" src="https://github.com/alivaditis/news-articles/assets/123565022/be5140a6-6d7d-4fc3-a8a0-da26cbd7530b">
-![Screen Shot 2023-09-14 at 12 19 47 PM](https://github.com/alivaditis/news-articles/assets/123565022/9bfb9103-4c9a-4340-8d3b-7bd22a13046f)
+
+![Screen Shot 2023-09-14 at 12 19 47 PM](https://github.com/alivaditis/news-articles/assets/123565022/0a09dcc0-c69f-41eb-aaef-a652570da79e)
 
 
 ## Setup
